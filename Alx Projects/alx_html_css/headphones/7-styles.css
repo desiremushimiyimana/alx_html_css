@@ -1,0 +1,109 @@
+/* What We Do Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: var(--secondary-color);
+    border: 1px solid #0697f8;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.service i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover i {
+    transform: rotate(360deg);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.service:hover .service-title {
+    color: var(--primary-color);
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.service:hover .service-description {
+    opacity: 0.8;
+}
+
+/* Our Results Section */
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result {
+    background-color: var(--secondary-color);
+    border: 1px solid #0685fc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.result:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.result i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.result:hover i {
+    transform: scale(1.1);
+}
+
+.result-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.result:hover .result-title {
+    color: var(--primary-color);
+}
+
+.result-description {
+    font-size: 1rem;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.result:hover .result-description {
+    opacity: 0.8;
+}

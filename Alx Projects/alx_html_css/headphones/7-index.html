@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/holberton_school-icon/css/holberton_school.css"> <!-- Replace with actual path -->
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">Welcome to Our Website</h1>
+            <p class="hero-description">Building a web page the right way, is not easy - except if you put in place strong foundations.</p>
+            <a href="#" class="hero-button">Learn More</a>
+        </div>
+    </header>
+    
+    <section class="what-we-do">
+        <div class="container">
+            <h2 class="section-title">What we do</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="icon-holberton"></i>
+                    <h3 class="service-title">Service One</h3>
+                    <p class="service-description">Description of service one.</p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton"></i>
+                    <h3 class="service-title">Service Two</h3>
+                    <p class="service-description">Description of service two.</p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton"></i>
+                    <h3 class="service-title">Service Three</h3>
+                    <p class="service-description">Description of service three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-results">
+        <div class="container">
+            <h2 class="section-title">Our results</h2>
+            <div class="results">
+                <div class="result">
+                    <div class="pentagon"></div>
+                    <h3 class="result-title">Result One</h3>
+                    <p class="result-description">Description of result one.</p>
+                </div>
+                <div class="result">
+                    <div class="pentagon"></div>
+                    <h3 class="result-title">Result Two</h3>
+                    <p class="result-description">Description of result two.</p>
+                </div>
+                <div class="result">
+                    <div class="pentagon"></div>
+                    <h3 class="result-title">Result Three</h3>
+                    <p class="result-description">Description of result three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contact-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dozana Desire Mushimiyimana. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="icon-holberton"></i></a>
+                <a href="#" class="social-link"><i class="icon-holberton"></i></a>
+                <a href="#" class="social-link"><i class="icon-holberton"></i></a>
+            </div>
+        </div>
+    </footer>
+    <style>
+        /* What We Do Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background-color: var(--secondary-color);
+    border: 1px solid #27b2fd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.service i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover i {
+    transform: rotate(360deg);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.service:hover .service-title {
+    color: var(--primary-color);
+}
+
+.service-description {
+    font-size: 1rem;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.service:hover .service-description {
+    opacity: 0.8;
+}
+
+/* Our Results Section */
+.results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result {
+    background-color: var(--secondary-color);
+    border: 1px solid #f9dd25;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.result:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.result i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.result:hover i {
+    transform: scale(1.1);
+}
+
+.result-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.result:hover .result-title {
+    color: var(--primary-color);
+}
+
+.result-description {
+    font-size: 1rem;
+    color: #666;
+    transition: opacity 0.3s ease;
+}
+
+.result:hover .result-description {
+    opacity: 0.8;
+}
+
+    </style>
+</body>
+</html>
